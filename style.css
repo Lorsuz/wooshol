@@ -2,6 +2,10 @@
   font-family: sora;
   src: url(font/Sora-VariableFont_wght.ttf);
 }
+a {
+  transition: 300ms;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +31,9 @@ body nav div.logo {
 body nav div.logo img {
   width: 50px;
 }
+body nav div.logo h1 {
+  transform: translateX(-8px) translateY(5px);
+}
 body nav ul {
   display: flex;
 }
@@ -35,6 +42,10 @@ body nav ul li {
 }
 body nav ul li a {
   color: #6E7275;
+  font-size: 1.1rem;
+}
+body nav ul li a:hover {
+  color: #0F9AFE;
 }
 body header {
   display: flex;
@@ -60,13 +71,18 @@ body header div.left div.content-text h1 {
 body header div.left div.content-text p {
   color: #636363;
   margin-bottom: 50px;
+  font-size: 1.2rem;
 }
 body header div.left div.content-text a {
   background: #0F9AFE;
   color: white;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 30px;
+  padding: 15px 30px;
   box-shadow: 1px 3px 4px rgba(16, 155, 254, 0.5019607843);
+  font-size: 1.2rem;
+}
+body header div.left div.content-text a:hover {
+  background: #0C7BCB;
 }
 body header div.right {
   display: flex;
@@ -135,9 +151,13 @@ body main section:nth-child(2) div.left div.content-text p {
 body main section:nth-child(2) div.left div.content-text a {
   background: #0F9AFE;
   color: white;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 30px;
+  padding: 15px 30px;
   box-shadow: 1px 3px 4px rgba(16, 155, 254, 0.5019607843);
+  font-size: 1.2rem;
+}
+body main section:nth-child(2) div.left div.content-text a:hover {
+  background: #0C7BCB;
 }
 body main section:nth-child(2) div.right {
   display: flex;
@@ -164,7 +184,7 @@ body main section:nth-child(3) > p {
   text-align: center;
 }
 body main section:nth-child(3) div.container {
-  width: 80%;
+  width: 85%;
   display: flex;
   justify-content: space-between;
 }
@@ -172,7 +192,7 @@ body main section:nth-child(3) div.container div.card {
   padding: 40px 30px;
   width: 330px;
   border-radius: 10px;
-  height: 400px;
+  height: 430px;
   display: flex;
   flex-direction: column;
   background: #EFF8FF;
@@ -188,7 +208,7 @@ body main section:nth-child(3) div.container div.card div.price {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 body main section:nth-child(3) div.container div.card div.price span {
   font-weight: 700;
@@ -221,6 +241,9 @@ body main section:nth-child(3) div.container div.card a {
   position: absolute;
   bottom: 40px;
   border-radius: 20px;
+}
+body main section:nth-child(3) div.container div.card a:hover {
+  background: #0C7BCB;
 }
 body main section:nth-child(3) div.container div.card.prefer {
   background: #293145;
